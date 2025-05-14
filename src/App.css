@@ -1,0 +1,206 @@
+body {
+  
+  background: linear-gradient(135deg, #0a0f24, #152b69);
+  color: #ffffff;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2{
+  font-size: 2.5rem;
+}
+
+/*home*/
+.home h1 {
+  font-size: 3rem;
+  color: #94f0f7;
+}
+
+/*about me, contact*/
+.about-me h2,
+.contact h2 {
+  margin-bottom: 20px;
+  color: #9b5de5;
+}
+
+.about-me p,
+.contact p {
+  font-size: 1.2rem;
+  color: #dddddd;
+}
+
+/*button*/
+button {
+  background-color: #94f0f7;
+  color: #0a0f24;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #9b5de5;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+/*projectwrapper, notewrapper*/
+.projectwrapper,
+.notewrapper {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.projectwrapper h2,
+.notewrapper h2{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/*project, note*/
+.project,
+.note {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.project:hover,
+.note:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project h3,
+.note h3 {
+    margin-bottom: 10px;
+    
+}
+
+
+.note a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.project a {
+    background-color: #9b5de5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.note a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    color: #6dd3fe;
+}
+
+.project a:hover
+{
+    text-decoration: underline;
+    transform: scale(1.05);
+    
+}
+
+/*skills*/
+.skills {
+    padding: 50px 20px;
+    color: white;
+    text-align: left;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #94f0f7;
+}
+
+.skill-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category .skill-details {
+    margin-left: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    color: #94f0f7;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    font-size: 1.2rem;
+    color: #dddddd;
+    margin-bottom: 5px;
+}
+
+.skill-category svg {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/*在手機螢幕上字體和按鈕放大*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p, li {
+        font-size: 1rem;
+    }
+    a {
+        padding: 12px 20px; 
+        font-size: 1.2rem;  
+    }
+}
+
+
