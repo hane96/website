@@ -39,6 +39,11 @@ h2{
   color: #dddddd;
 }
 
+#name {
+    margin-top: 2rem;
+    color: #89e5f5;
+}
+
 /*button*/
 button {
   background-color: #94f0f7;
