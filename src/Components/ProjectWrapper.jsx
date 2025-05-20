@@ -11,21 +11,27 @@ function ProjectWrapper() {
         },
         {
             title: "Message Board",
-            description: "用Flask和SQLite做為後端",
+            description: "簡單的message board 主要練習後端的Flask和SQLite",
             link: "https://github.com/hane96/message_board",
-            tags: ["Flask", "SQLite", "HTML", "JavaScipt"]
+            tags: ["Flask", "SQLite", "HTML", "JavaScipt", "API"]
         },
         {
             title: "ToDo-List",
-            description: "無使用前端架構製作的代辦事項專案",
+            description: "無使用前端架構製作的代辦事項 練習html和js",
             link: "https://github.com/hane96/frontend_related/tree/main/todo-list",
             tags: ["HTML", "CSS", "JavaScript", "Frontend"]
         },
         {
             title: "ToDo-List-React",
-            description: "無使用前端架構製作的代辦事項專案",
+            description: "用React製作的代辦事項 練習React操作、component等",
             link: "https://github.com/hane96/frontend_related/tree/main/todo-list-React",
             tags: ["React", "JavaScript", "Frontend"]
+        },
+        {
+            title: "weather-app",
+            description: "查詢城市天氣的網頁 主要練習React hook和API串接 ",
+            link: "https://github.com/hane96/frontend_related/tree/main/weather-app",
+            tags: ["React", "hook", "API", "Frontend"]
         }
     ]
 

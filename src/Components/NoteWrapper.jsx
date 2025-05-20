@@ -8,6 +8,11 @@ const notes = [
         link: "https://github.com/hane96/UnitySimpleTowerDefense/blob/main/note.md"
     },
     {
+        title: "Leetcode note",
+        description: "Leetcode練習的筆記",
+        link: "https://github.com/hane96/leetcode_notes_changing/blob/main/leetcode_notes.md"
+    },
+    {
         title: "HTML note",
         description: "HTML的基礎與常用的概念",
         link: "https://github.com/hane96/frontend_related/blob/main/note/html_note.md"
@@ -31,7 +36,12 @@ const notes = [
         title: "React note",
         description: "React的基礎概念介紹(組件、JSX、prop、state等)",
         link: "https://github.com/hane96/frontend_related/blob/main/note/react_note.md"
-    }
+    },
+    {
+        title: "React hook note",
+        description: "React hook的基本概念和常用hook介紹",
+        link: "https://github.com/hane96/frontend_related/blob/main/note/hook_note.md"
+    },
 ]
 
 function NoteWrapper() {
