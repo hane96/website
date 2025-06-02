@@ -19,19 +19,25 @@ function ProjectWrapper() {
             title: "ToDo-List",
             description: "無使用前端架構製作的代辦事項 練習html和js",
             link: "https://github.com/hane96/frontend_related/tree/main/todo-list",
-            tags: ["HTML", "CSS", "JavaScript", "Frontend"]
+            tags: ["HTML", "CSS", "JavaScript"]
         },
         {
             title: "ToDo-List-React",
             description: "用React製作的代辦事項 練習React操作、component等",
             link: "https://github.com/hane96/frontend_related/tree/main/todo-list-React",
-            tags: ["React", "JavaScript", "Frontend"]
+            tags: ["React", "JavaScript"]
         },
         {
             title: "weather-app",
             description: "查詢城市天氣的網頁 主要練習React hook和API串接 ",
             link: "https://github.com/hane96/frontend_related/tree/main/weather-app",
-            tags: ["React", "hook", "API", "Frontend"]
+            tags: ["React", "hook", "API"]
+        },
+        {
+            title: "Message-Board-React",
+            description: "用假API和localStorage做留言儲存的留言板 主要練習React Router、Hook、LocalStorage的處理並試用tailwind css",
+            link: "https://github.com/hane96/frontend_related/tree/main/message-board",
+            tags: ["React", "React Router", "hook","localStorage"]
         }
     ]
 

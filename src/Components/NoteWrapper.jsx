@@ -42,6 +42,21 @@ const notes = [
         description: "React hook的基本概念和常用hook介紹",
         link: "https://github.com/hane96/frontend_related/blob/main/note/hook_note.md"
     },
+    {
+        title: "React Router note",
+        description: "React router的基本概念介紹(Route、Link、Nested/Dynamic/Protected Route等)",
+        link: "https://github.com/hane96/frontend_related/blob/main/note/react_router_note.md"
+    },
+    {
+        title: "TypeScript note",
+        description: "TypeScript的基本介紹以及在DOM和React中常見的型別及處理方法",
+        link: "https://github.com/hane96/frontend_related/blob/main/note/typescript_note.md"
+    },
+    {
+        title: "TailwindCSS note",
+        description: "tailwind常用class的分類整理",
+        link: "https://github.com/hane96/frontend_related/blob/main/note/tailwind_note.md"
+    }
 ]
 
 function NoteWrapper() {

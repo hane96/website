@@ -188,7 +188,7 @@ button:hover {
     font-size: 1.2rem;
 }
 
-/*在手機螢幕上字體和按鈕放大*/
+/*在手機螢幕上字體和按鈕放大, 改變project和note為單欄顯示 調整寬度*/
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -205,6 +205,11 @@ button:hover {
     a {
         padding: 12px 20px; 
         font-size: 1.2rem;  
+    }
+    .project,
+    .note{
+        width: 80%;
+        flex-direction: column;
     }
 }
 

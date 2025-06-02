@@ -12,8 +12,8 @@ function Skills() {
                 <div className="skill-details">
                     <h3>Languages:</h3>
                     <ul>
-                        <li>熟悉: C, C++, C#, Python</li>
-                        <li>基礎: JavaScript, Java, SQL</li>
+                        <li>熟悉: C, C++, C#, Python, JavaScript</li>
+                        <li>基礎: TypeScript, Java, SQL</li>
                     </ul>
                 </div>
             </div>
@@ -23,7 +23,8 @@ function Skills() {
                 <div className="skill-details">
                     <h3>Frontend:</h3>
                     <ul>
-                        <li>基礎: HTML, CSS, JavaScript, React</li>
+                        <li>HTML, CSS, JavaScript(ES6+), TypeScript(basic), TailwindCSS </li>
+                        <li>React(Hooks, Router, Component-based Architecture)</li>
                     </ul>
                 </div>
             </div>
