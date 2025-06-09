@@ -24,7 +24,7 @@ const notes = [
     },
     {
         title: "JavaScript note",
-        description: "主要以已經會C++和python的角度去學JS，並記錄有哪些語法或概念上不同的點",
+        description: "以已熟悉 C++ 和 Python 的角度來學習 JavaScript，整理語法與觀念的差異",
         link: "https://github.com/hane96/frontend_related/blob/main/note/js_note.md"
     },
     {
@@ -39,7 +39,7 @@ const notes = [
     },
     {
         title: "React hook note",
-        description: "React hook的基本概念和常用hook介紹",
+        description: "React Hooks 的基本概念與常用 Hook（useState、useEffect等）說明",
         link: "https://github.com/hane96/frontend_related/blob/main/note/hook_note.md"
     },
     {
@@ -54,14 +54,14 @@ const notes = [
     },
     {
         title: "TailwindCSS note",
-        description: "tailwind常用class的分類整理",
+        description: "整理 Tailwind 常用 class 的分類與用法",
         link: "https://github.com/hane96/frontend_related/blob/main/note/tailwind_note.md"
     }
 ]
 
 function NoteWrapper() {
     return (
-        <div className="notewrapper">
+        <div className="notewrapper" id="notes">
             <h2>我的學習筆記</h2>
             {notes.map((note) => {
                 return(

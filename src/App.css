@@ -9,7 +9,6 @@ body {
   position: relative;
 }
 
-
 section {
   padding: 80px 20px;
   text-align: center;
@@ -26,6 +25,52 @@ h2{
   color: #94f0f7;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(10, 15, 36, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+}
+
+.navbar a {
+  color: #94f0f7;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+  color: #9463cf;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+}
+
+
+#github {
+    color: #9b5de5;
+    transform: scale(1.1);
+}
+
+#github:hover {
+    color: #904be6;
+}
+
+.resume-link {
+    color: #9b5de5;
+}
+
 /*about me, contact*/
 .about-me h2,
 .contact h2 {
@@ -40,8 +85,9 @@ h2{
 }
 
 #name {
-    margin-top: 2rem;
-    color: #89e5f5;
+  font-size: 1.8rem;
+  color: #89e5f5;
+  margin-bottom: 1rem;
 }
 
 /*button*/
@@ -69,8 +115,9 @@ button:hover {
     
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 3rem;
     padding: 20px;
+    justify-content: center;
 }
 .projectwrapper h2,
 .notewrapper h2{
@@ -90,7 +137,7 @@ button:hover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
-    margin: 0 auto;
+    margin: 5 auto;
     
 }
 
@@ -112,7 +159,7 @@ button:hover {
     text-decoration: none;
 }
 
-.project a {
+.github-button {
     background-color: #9b5de5;
     color: #ffffff;
     padding: 10px 20px;
@@ -131,12 +178,20 @@ button:hover {
     color: #6dd3fe;
 }
 
-.project a:hover
+.github-button:hover
 {
     text-decoration: underline;
     transform: scale(1.05);
     
 }
+
+.demo-button {
+  display: inline-block;
+  margin: auto;
+  color: #22c55e; 
+  text-decoration: underline;
+}
+
 
 /*skills*/
 .skills {
@@ -154,17 +209,25 @@ button:hover {
 
 .skill-category {
     display: flex;
+    flex: wrap;
     align-items: center;
     margin-bottom: 30px;
     background-color: #1e293b;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3);
 }
 
 .skill-category .skill-details {
     margin-left: 20px;
 }
+
 
 .skill-category h3 {
     font-size: 1.5rem;
