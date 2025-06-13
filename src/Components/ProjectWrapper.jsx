@@ -1,4 +1,5 @@
 import Project from "./Project";
+import { motion } from "framer-motion";
 
 function ProjectWrapper() {
 
@@ -65,14 +66,21 @@ function ProjectWrapper() {
             {
                 projects.map((project)=>{
                     return(
-                    <Project 
-                    title = {project.title}
-                    description = {project.description}
-                    link = {project.link}
-                    tags = {project.tags}
-                    key = {project.title}
-                    demo = {project.demo}
-                    />
+                    <motion.div
+                        key={project.title}
+                        initial={{opacity: 0, y: 50}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once:false, amount: 0.2}}
+                    >
+                        <Project 
+                        title = {project.title}
+                        description = {project.description}
+                        link = {project.link}
+                        tags = {project.tags}
+                        demo = {project.demo}
+                        />
+                    </motion.div>    
                     )
                 })
             }

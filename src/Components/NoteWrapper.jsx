@@ -1,5 +1,6 @@
 
 import Note from "./Note";
+import { motion } from "framer-motion";
 
 const notes = [
     {
@@ -65,12 +66,19 @@ function NoteWrapper() {
             <h2>我的學習筆記</h2>
             {notes.map((note) => {
                 return(
-                    <Note 
-                    title = {note.title}
-                    description = {note.description}
-                    link = {note.link}
-                    key = {note.title}
-                    />
+                    <motion.div
+                        key={note.title}
+                        initial={{opacity: 0, y: 50}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.6}}
+                        viewport={{once:false, amount: 0.2}}
+                    > 
+                        <Note 
+                        title = {note.title}
+                        description = {note.description}
+                        link = {note.link}
+                        />
+                    </motion.div>   
                 )
             })
         }
