@@ -57,6 +57,11 @@ const notes = [
         title: "TailwindCSS note",
         description: "整理 Tailwind 常用 class 的分類與用法",
         link: "https://github.com/hane96/frontend_related/blob/main/note/tailwind_note.md"
+    },
+    {
+        title: "Frontend Optimization",
+        description: "整理基本的前端優化方式，和JS/React中優化效能的做法",
+        link: "https://github.com/hane96/frontend_related/blob/main/note/frontend_optimization.md"
     }
 ]
 
