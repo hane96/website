@@ -13,7 +13,7 @@ function ProjectWrapper() {
         {
             title: "Message Board",
             description: "簡單的message board，主要練習後端的Flask和SQLite",
-            link: "https://github.com/hane96/message_board",
+            link: "https://github.com/hane96/backend_related/tree/main/message_board",
             tags: ["Flask", "SQLite", "HTML", "JavaScipt", "API"]
         },
         {
