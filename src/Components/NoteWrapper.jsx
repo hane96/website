@@ -1,94 +1,101 @@
-
 import Note from "./Note";
 import { motion } from "framer-motion";
 
 const notes = [
-    {
-        title: "Unity note",
-        description: "製作塔防專案時邊做邊學的筆記，包含一些Unity的基本概念和專案的製作過程",
-        link: "https://github.com/hane96/UnitySimpleTowerDefense/blob/main/note.md"
-    },
-    {
-        title: "Leetcode note",
-        description: "Leetcode練習的筆記",
-        link: "https://github.com/hane96/leetcode_notes_changing/blob/main/leetcode_notes.md"
-    },
-    {
-        title: "HTML note",
-        description: "HTML的基礎與常用的概念",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/html_note.md"
-    },
-    {
-        title: "CSS note",
-        description: "CSS的基礎與常用的屬性",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/css_note.md"
-    },
-    {
-        title: "JavaScript note",
-        description: "以已熟悉 C++ 和 Python 的角度來學習 JavaScript，整理語法與觀念的差異",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/js_note.md"
-    },
-    {
-        title: "DOM note",
-        description: "DOM和event的基本介紹與應用",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/dom_note.md"
-    },
-    {
-        title: "React note",
-        description: "React的基礎概念介紹(組件、JSX、prop、state等)",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/react_note.md"
-    },
-    {
-        title: "React hook note",
-        description: "React Hooks 的基本概念與常用 Hook（useState、useEffect等）說明",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/hook_note.md"
-    },
-    {
-        title: "React Router note",
-        description: "React router的基本概念介紹(Route、Link、Nested/Dynamic/Protected Route等)",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/react_router_note.md"
-    },
-    {
-        title: "TypeScript note",
-        description: "TypeScript的基本介紹以及在DOM和React中常見的型別及處理方法",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/typescript_note.md"
-    },
-    {
-        title: "TailwindCSS note",
-        description: "整理 Tailwind 常用 class 的分類與用法",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/tailwind_note.md"
-    },
-    {
-        title: "Frontend Optimization",
-        description: "整理基本的前端優化方式，和JS/React中優化效能的做法",
-        link: "https://github.com/hane96/frontend_related/blob/main/note/frontend_optimization.md"
-    }
-]
+  {
+    title: "Unity note",
+    description:
+      "製作塔防專案時邊做邊學的筆記，包含一些Unity的基本概念和專案的製作過程",
+    link: "https://github.com/hane96/UnitySimpleTowerDefense/blob/main/note.md",
+  },
+  {
+    title: "Leetcode note",
+    description: "Leetcode練習的筆記",
+    link: "https://github.com/hane96/leetcode_notes_changing/blob/main/leetcode_notes.md",
+  },
+  {
+    title: "HTML note",
+    description: "HTML的基礎與常用的概念",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/html_note.md",
+  },
+  {
+    title: "CSS note",
+    description: "CSS的基礎與常用的屬性",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/css_note.md",
+  },
+  {
+    title: "JavaScript note",
+    description:
+      "以已熟悉 C++ 和 Python 的角度來學習 JavaScript，整理語法與觀念的差異",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/js_note.md",
+  },
+  {
+    title: "DOM note",
+    description: "DOM和event的基本介紹與應用",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/dom_note.md",
+  },
+  {
+    title: "React note",
+    description: "React的基礎概念介紹(組件、JSX、prop、state等)",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/react_note.md",
+  },
+  {
+    title: "React hook note",
+    description:
+      "React Hooks 的基本概念與常用 Hook（useState、useEffect等）說明",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/hook_note.md",
+  },
+  {
+    title: "React Router note",
+    description:
+      "React router的基本概念介紹(Route、Link、Nested/Dynamic/Protected Route等)",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/react_router_note.md",
+  },
+  {
+    title: "TypeScript note",
+    description: "TypeScript的基本介紹以及在DOM和React中常見的型別及處理方法",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/typescript_note.md",
+  },
+  {
+    title: "TailwindCSS note",
+    description: "整理 Tailwind 常用 class 的分類與用法",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/tailwind_note.md",
+  },
+  {
+    title: "Frontend Optimization",
+    description: "整理基本的前端優化方式，和JS/React中優化效能的做法",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/frontend_optimization.md",
+  },
+  {
+    title: "Redux note (working on)",
+    description: "整理 Redux 核心概念與實作流程，持續更新中。",
+    link: "https://github.com/hane96/frontend_related/blob/main/note/redux_note.md",
+  },
+];
 
 function NoteWrapper() {
-    return (
-        <div className="notewrapper" id="notes">
-            <h2>我的學習筆記</h2>
-            {notes.map((note) => {
-                return(
-                    <motion.div
-                        key={note.title}
-                        initial={{opacity: 0, y: 50}}
-                        whileInView={{opacity: 1, y: 0}}
-                        transition={{duration: 0.6}}
-                        viewport={{once:false, amount: 0.2}}
-                    > 
-                        <Note 
-                        title = {note.title}
-                        description = {note.description}
-                        link = {note.link}
-                        />
-                    </motion.div>   
-                )
-            })
-        }
-        </div>
-    )
+  return (
+    <div className="notewrapper" id="notes">
+      <h2>我的學習筆記</h2>
+      {notes.map((note) => {
+        return (
+          <motion.div
+            key={note.title}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <Note
+              title={note.title}
+              description={note.description}
+              link={note.link}
+            />
+          </motion.div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default NoteWrapper;
